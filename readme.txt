@@ -1,9 +1,11 @@
 How to run the code
 *********************************************************************************
 1.open a new terminal
-2.Run the python executable file
-	
-	python blind_spot_detection.py
+2.Build the executable file 
 
-3.Press 'esc' button to terminate
+	g++ -o pjt blind_spot_detection.cpp `pkg-config opencv --cflags --libs`
 
+3.Run the executable file 
+
+	./pjt 
+4.Press 'q' button to terminate
